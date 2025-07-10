@@ -1,0 +1,1 @@
+bir boş liste var bana belli bir aralıkta değer vericek ve bu değeri listeye ekleyecek ve listenin boyutu 10 eleman olunca fonksiyon duracak ve listedeki çift değerleri ayrı bir listeye ekleyecek ve listede aynı degerden birden fazla olan degerleri ayrı bir list icinde tutacak
