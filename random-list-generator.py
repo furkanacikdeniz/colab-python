@@ -1,16 +1,18 @@
 from random import randint
-liste1 = []
-liste2 = []
-liste3 = []
-while len(liste1) < 10:
+ana_liste = []    
+cift_sayilar = []
+tekrar_edenler = []
 
-  deger = randint(1,5)
-  liste1.append(deger)
-  if deger % 2 == 0 :
-    liste2.append(deger)
-  if liste1.count(deger)>1 in liste1:
-    liste3.append(deger)
-print(f"Liste: {liste1}")
-print(f"Listedeki çift sayıları tutan liste: {liste2}")
-print(f"Listedeki tekrar eden sayılar: {liste3}")
+while len(ana_liste) < 10:
+    sayi = randint(1, 5)
+    ana_liste.append(sayi)
 
+for sayi in ana_liste:
+    if sayi % 2 == 0:
+        cift_sayilar.append(sayi)
+    if ana_liste.count(sayi) > 1 and sayi not in tekrar_edenler:
+        tekrar_edenler.append(sayi)
+
+print(f"Liste: {ana_liste}")
+print(f"Çift sayılar: {cift_sayilar}")
+print(f"Tekrar eden sayılar: {tekrar_edenler}")
